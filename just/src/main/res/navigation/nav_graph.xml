@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DutyActivity">
+
+    <activity
+        android:id="@+id/DutyActivity"
+        android:name="com.justsafe.just.ui.zjprisonshift.DutyActivity"
+        android:label="@string/duty_activity"
+        tools:layout="@layout/activity_duty">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/HandoverActivity" />
+    </activity>
+    <activity
+        android:id="@+id/HandoverActivity"
+        android:name="com.justsafe.just.ui.zjprisonshift.HandoverActivity"
+        android:label="@string/handover_activity"
+        tools:layout="@layout/activity_handover">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/DutyActivity" />
+    </activity>
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.justsafe.just">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_test">
+        <activity
+            android:name=".ui.zjprisonshift.HandoverActivity"
+            android:label="@string/title_activity_duty"
+            android:theme="@style/Theme.App_test.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".ui.zjprisonshift.DutyActivity"
+            android:label="@string/title_activity_duty"
+            android:theme="@style/Theme.App_test.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,6 @@
+include ':libarch2'
+include ':libview'
+include ':just'
+include ':domain'
+include ':app'
+rootProject.name = "app"
